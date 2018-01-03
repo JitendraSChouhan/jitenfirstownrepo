@@ -1,0 +1,23 @@
+a = int(input("enter no. of tickets fo a--"))
+b = int(input("enter no. of tickets fo b--"))
+c = int(input("enter no. of tickets fo c--"))
+d = int(input("enter no. of tickets fo d--"))
+   
+count =0
+bt= 0
+ct=0
+dt=0
+for i in range(a):
+    count+=1
+    if bt<b:
+        count+=1
+        bt+=1
+        print(bt)
+    if ct<c:
+        count+=1
+        ct+=1
+    if dt<d:
+        count+=1
+        dt+=1
+
+print(count)
