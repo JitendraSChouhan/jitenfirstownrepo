@@ -1,23 +1,21 @@
-a = int(input("enter no. of tickets fo a--"))
-b = int(input("enter no. of tickets fo b--"))
-c = int(input("enter no. of tickets fo c--"))
-d = int(input("enter no. of tickets fo d--"))
-   
-count =0
-bt= 0
-ct=0
-dt=0
-for i in range(a):
-    count+=1
-    if bt<b:
-        count+=1
-        bt+=1
-        print(bt)
-    if ct<c:
-        count+=1
-        ct+=1
-    if dt<d:
-        count+=1
-        dt+=1
+lt1 = [int(x) for x in input("please enter num with space--").split(" ")]
+#lt1 = [6,4,5,8]
+#lt1 =[4,8] # code is not working for this currently-- will check with Sarfraaz
+#Need to learn all other ways to take multiple input from Sarfraaz
+count = lt1[0]
+lt2=lt1[1:]
+while lt1[0]>=0:
+    print(lt2)
+    for i,j in enumerate(lt2):
+        if lt2[i]==1:
+            #t2[i]-=1
+            count+=1
+            del lt2[i]
+        else:
+            #del lt2[i]
+            lt2[i]-=1
+            count+=1
+    lt1[0]-=1
 
 print(count)
+    
