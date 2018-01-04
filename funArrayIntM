@@ -1,13 +1,22 @@
-def funAI(a,b):
-    a.append(b)
-    
-    
-    for i in range(0,len(a),2):
-        print(a[i],a[i+1])
-        
+def FunAI(list1,b):
+    for i,k in enumerate(list1):
+        for j in list1[i:]:
+            if (k+j)==b:
+                print(k,j)
 
-
-a=[20,10,28,2,15,15,34,8,18]
+a=[20,10,28,2,15,15,34,8,18,25,5,25]
 b=30
+FunAI(a,b)
 
-funAI(a,b)
+'''
+My output
+20 10
+28 2
+15 15
+15 15
+15 15
+25 5
+5 25
+
+#Don't know how to get rid of multiple 15 entries
+'''
